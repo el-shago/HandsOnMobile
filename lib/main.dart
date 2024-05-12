@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:hands_on_flutter/presentation/RegisterPage.dart';
 import 'package:hands_on_flutter/enums/Routes.dart';
+import 'package:hands_on_flutter/presentation/UserSettingsPage.dart';
+import 'package:hands_on_flutter/presentation/CompletedCoursePage.dart';
 
 void main() {
   runApp(const NavigatorPagesCetys());
@@ -14,16 +16,14 @@ class NavigatorPagesCetys extends StatelessWidget {
     return MaterialApp(
       //home: FirstPageWidget(),
 
-       routes: {
-         Routes.registerPage.route: (context) {
-           final _aux = ModalRoute.of(context)!.settings.arguments as String;
-           return RegisterPage();//(userName: _aux);
-        },
+      routes: {
         Routes.registerPage.route: (context) => RegisterPage(),
-        
+        Routes.usersettingsPage.route: (context) => UserSettingsPage(),
+        Routes.completedcoursePage.route: (context) => CompletedCoursePage(),
+        // Puedes agregar más rutas aquí según sea necesario
       },
 
-      initialRoute: Routes.registerPage.route,
+      initialRoute: Routes.completedcoursePage.route,
     );
   }
 }
