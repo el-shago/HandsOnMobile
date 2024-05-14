@@ -1,6 +1,8 @@
 enum Routes {
   registerPage(route: '/register_page'),
-  loginPage(route: '/login_page');
+  usersettingsPage(route: '/usersettings_page'),
+  completedcoursePage(route: '/completedcourse_page');
+  
 
   const Routes({required this.route});
 
