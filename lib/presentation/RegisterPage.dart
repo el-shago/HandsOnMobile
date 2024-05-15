@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:hands_on_flutter/presentation/LoginPage.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -26,7 +28,7 @@ class _RegisterPageState extends State<RegisterPage> {
               horizontal:
                   16.0), // Ajusta el relleno horizontal según sea necesario
           child: Text(
-            "Register",
+            "Registro",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 30,
@@ -37,137 +39,143 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Container(
         color: Color(0xFFF5F5F5), // Fondo gris
         padding: EdgeInsets.all(20),
-        child: ListView(
-          children: [
-            TextField(
-              controller: userName,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.grey.shade200,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide.none,
-                ),
-                hintText: 'Nombre',
-                hintStyle: TextStyle(
-                  color: Colors.grey.shade500,
-                ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 16.0,
-                  vertical: 14.0,
-                ),
+        child: ListView(children: [
+          TextField(
+            controller: userName,
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Colors.grey.shade200,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: BorderSide.none,
+              ),
+              hintText: 'Nombre',
+              hintStyle: TextStyle(
+                color: Colors.grey.shade500,
+              ),
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 14.0,
               ),
             ),
-            SizedBox(height: 20),
-            TextField(
-              controller: lastName,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.grey.shade200,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide.none,
-                ),
-                hintText: 'Apellido',
-                hintStyle: TextStyle(
-                  color: Colors.grey.shade500,
-                ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 16.0,
-                  vertical: 14.0,
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            TextField(
-              // Nuevo campo para el correo electrónico
-              controller: email,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.grey.shade200,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide.none,
-                ),
-                hintText: 'Correo',
-                hintStyle: TextStyle(
-                  color: Colors.grey.shade500,
-                ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 16.0,
-                  vertical: 14.0,
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            TextField(
-              controller: password,
-              obscureText: true,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Colors.grey.shade200,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                  borderSide: BorderSide.none,
-                ),
-                hintText: 'Contraseña',
-                hintStyle: TextStyle(
-                  color: Colors.grey.shade500,
-                ),
-                contentPadding: EdgeInsets.symmetric(
-                  horizontal: 16.0,
-                  vertical: 14.0,
-                ),
-              ),
-            ),
-            SizedBox(height: 20),
-            MaterialButton(
-              onPressed: () {
-                if (keyFormLogin.currentState!.validate()) {
-                  print("Validar el usuario con su API");
-                  login();
-                }
-              },
-              child: Text(
-                "Registrar",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-              ),
-              color: Color(0xFFFF78B2),
-              textColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-                side: BorderSide(
-                  color: Color(0xFFFF78B2),
-                ),
-              ),
-            ),
-           SizedBox(height: 20.0),
-Image.asset(
-  'assets/images/google.png',
-  height: 46.0,
-),
-SizedBox(height: 10.0),
-Center(
-  child: Text.rich(
-    TextSpan(
-      text: '¿Ya tienes cuenta? ',
-      style: TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 16.0,
-        color: Colors.black,
-      ),
-      children: [
-        TextSpan(
-          text: 'Inicia Sesión',
-          style: TextStyle(
-            color: Colors.blue,
-            decoration: TextDecoration.underline,
           ),
-        ),
-      ],
-    ),
-  ),
-),
+          SizedBox(height: 20),
+          TextField(
+            controller: lastName,
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Colors.grey.shade200,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: BorderSide.none,
+              ),
+              hintText: 'Apellido',
+              hintStyle: TextStyle(
+                color: Colors.grey.shade500,
+              ),
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 14.0,
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          TextField(
+            // Nuevo campo para el correo electrónico
+            controller: email,
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Colors.grey.shade200,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: BorderSide.none,
+              ),
+              hintText: 'Correo',
+              hintStyle: TextStyle(
+                color: Colors.grey.shade500,
+              ),
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 14.0,
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          TextField(
+            controller: password,
+            obscureText: true,
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Colors.grey.shade200,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10.0),
+                borderSide: BorderSide.none,
+              ),
+              hintText: 'Contraseña',
+              hintStyle: TextStyle(
+                color: Colors.grey.shade500,
+              ),
+              contentPadding: EdgeInsets.symmetric(
+                horizontal: 16.0,
+                vertical: 14.0,
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+          MaterialButton(
+            onPressed: () {
+              if (keyFormLogin.currentState!.validate()) {
+                print("Validar el usuario con su API");
+                login();
+              }
+            },
+            child: Text(
+              "Registrar",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+            ),
+            color: Color(0xFFFF78B2),
+            textColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+              side: BorderSide(
+                color: Color(0xFFFF78B2),
+              ),
+            ),
+          ),
+          SizedBox(height: 20.0),
+          Image.asset(
+            'assets/images/google.png',
+            height: 46.0,
+          ),
+          SizedBox(height: 10.0),
+          Center(
+            child: Text.rich(
+              TextSpan(
+                  text: '¿Ya tienes cuenta? ',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    color: Colors.black,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Inicia Sesión',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()),
+                          );
+                        },
+                    ),
+                  ]),
+            ),
+          ),
         ]),
       ),
     );

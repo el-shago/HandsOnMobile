@@ -17,16 +17,16 @@ class NavigatorPagesCetys extends StatelessWidget {
     return MaterialApp(
       //home: FirstPageWidget(),
 
-       routes: {
-         Routes.registerPage.route: (context) {
-           final _aux = ModalRoute.of(context)!.settings.arguments as String;
-           return RegisterPage();//(userName: _aux);
+      routes: {
+        Routes.registerPage.route: (context) {
+          final _aux = ModalRoute.of(context)!.settings.arguments as String;
+          return RegisterPage(); //(userName: _aux);
         },
         Routes.registerPage.route: (context) => RegisterPage(),
-        
+        Routes.loginPage.route: (context) => LoginPage(),
       },
 
-      initialRoute: Routes.completedcoursePage.route,
+      initialRoute: Routes.registerPage.route,
     );
   }
 }
