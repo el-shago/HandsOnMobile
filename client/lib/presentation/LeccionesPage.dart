@@ -1,32 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LeccionesPage extends StatefulWidget {
-  const LeccionesPage({super.key});
-
-  @override
-  State<LeccionesPage> createState() => _LeccionesPageState();
-}
-
-class _LeccionesPageState extends State<LeccionesPage> {
-  int _selectedIndex = 1;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-
-      switch (_selectedIndex) {
-        case 0:
-          // Navigate to Perfil Page
-          break;
-        case 1:
-          // Stay on Lecciones Page
-          break;
-        case 2:
-          // Navigate to Ajustes Page
-          break;
-      }
-    });
-  }
+class LeccionesPage extends StatelessWidget {
+  const LeccionesPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -112,24 +87,6 @@ class _LeccionesPageState extends State<LeccionesPage> {
             ),
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _selectedIndex, // Set the current index
-        onTap: _onItemTapped, // Handle item taps
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person_outline),
-            label: 'Perfil',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.menu_book),
-            label: 'Lecciones',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Ajustes',
-          ),
-        ],
       ),
     );
   }
