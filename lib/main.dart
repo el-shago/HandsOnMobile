@@ -24,6 +24,8 @@ class NavigatorPagesCetys extends StatelessWidget {
         },
         Routes.registerPage.route: (context) => RegisterPage(),
         Routes.loginPage.route: (context) => LoginPage(),
+        Routes.completedcoursePage.route: (context) => CompletedCoursePage(),
+        Routes.usersettingsPage.route: (context) => UserSettingsPage(),
       },
 
       initialRoute: Routes.registerPage.route,

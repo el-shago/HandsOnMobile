@@ -40,7 +40,7 @@ class _RegisterPageState extends State<RegisterPage> {
         color: Color(0xFFF5F5F5), // Fondo gris
         padding: EdgeInsets.all(20),
         child: ListView(children: [
-          TextField(
+          TextFormField(
             controller: userName,
             decoration: InputDecoration(
               filled: true,
@@ -60,7 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ),
           SizedBox(height: 20),
-          TextField(
+          TextFormField(
             controller: lastName,
             decoration: InputDecoration(
               filled: true,
@@ -80,7 +80,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ),
           SizedBox(height: 20),
-          TextField(
+          TextFormField(
             // Nuevo campo para el correo electrónico
             controller: email,
             decoration: InputDecoration(
@@ -101,7 +101,7 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
           ),
           SizedBox(height: 20),
-          TextField(
+          TextFormField(
             controller: password,
             obscureText: true,
             decoration: InputDecoration(
@@ -187,7 +187,7 @@ class _RegisterPageState extends State<RegisterPage> {
     print(userName.text);
     print(password.text);
     if (validacion) {
-      //Navigator.pushNamed(context, Routes.firstPage.route, arguments: userName.text);
+      Navigator.pushNamed(context, '/login_page');
     }
   }
 }
