@@ -1,0 +1,28 @@
+^C:\GITHUB\HANDS_ON_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\D893207467A536F2B471733EF9C7204A\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\spere\dev\flutter PROJECT_DIR=C:\GitHub\hands_on_flutter FLUTTER_ROOT=C:\Users\spere\dev\flutter FLUTTER_EPHEMERAL_DIR=C:\GitHub\hands_on_flutter\windows\flutter\ephemeral PROJECT_DIR=C:\GitHub\hands_on_flutter FLUTTER_TARGET=C:\GitHub\hands_on_flutter\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC8wNDgxN2M5OWM5ZmQ0OTU2ZjI3NTA1MjA0ZjdlMzQ0MzM1ODEwYWVkLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\GitHub\hands_on_flutter\.dart_tool\package_config.json C:/Users/spere/dev/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GITHUB\HANDS_ON_FLUTTER\BUILD\WINDOWS\X64\CMAKEFILES\8D1BCD6F9374429C6A8AC0E7135D1A6F\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\GITHUB\HANDS_ON_FLUTTER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/GitHub/hands_on_flutter/windows -BC:/GitHub/hands_on_flutter/build/windows/x64 --check-stamp-file C:/GitHub/hands_on_flutter/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
