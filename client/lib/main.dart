@@ -18,6 +18,7 @@ class NavigatorPagesCetys extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       //home: FirstPageWidget(),
+      debugShowCheckedModeBanner: false,
 
       routes: {
         Routes.registerPage.route: (context) {
@@ -32,7 +33,7 @@ class NavigatorPagesCetys extends StatelessWidget {
         Routes.homePage.route: (context) => HomeScreen(),
       },
 
-      initialRoute: Routes.homePage.route,
+      initialRoute: Routes.registerPage.route,
     );
   }
 }
