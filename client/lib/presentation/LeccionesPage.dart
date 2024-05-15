@@ -14,9 +14,10 @@ class LeccionesPage extends StatelessWidget {
             const Text(
               'Lecciones',
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold),
+                color: Colors.black,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
             ),
             const SizedBox(width: 8),
             Image.asset(
@@ -45,42 +46,43 @@ class LeccionesPage extends StatelessWidget {
             ),
             Expanded(
               child: ListView(
-                children: const [
-                  LessonItem(
-                    isChecked: true,
+                children: [
+                  // Each LessonCard without navigation action
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Alfabeto',
+                    backgroundColor: Colors.amber,
+                    onTap: () {},
                   ),
-                  LessonItem(
-                    isChecked: true,
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Números',
+                    backgroundColor: Colors.orange,
+                    onTap: () {},
                   ),
-                  LessonItem(
-                    isChecked: false,
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Saludos',
+                    backgroundColor: Colors.blue,
+                    onTap: () {},
                   ),
-                  LessonItem(
-                    isChecked: false,
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Familia',
+                    backgroundColor: Colors.indigo,
+                    onTap: () {},
                   ),
-                  LessonItem(
-                    isChecked: false,
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Objetos',
+                    backgroundColor: Colors.purple,
+                    onTap: () {},
                   ),
-                  LessonItem(
-                    isChecked: false,
+                  LessonCard(
+                    imagePath: 'assets/images/manitas.png',
                     label: 'Alfabeto',
-                  ),
-                  LessonItem(
-                    isChecked: false,
-                    label: 'Números',
-                  ),
-                  LessonItem(
-                    isChecked: false,
-                    label: 'Saludos',
-                  ),
-                  LessonItem(
-                    isChecked: false,
-                    label: 'Familia',
+                    backgroundColor: Colors.green,
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -92,45 +94,54 @@ class LeccionesPage extends StatelessWidget {
   }
 }
 
-class LessonItem extends StatelessWidget {
-  final bool isChecked;
+// LessonCard widget to display each lesson item
+class LessonCard extends StatelessWidget {
+  final String imagePath;
   final String label;
+  final Color backgroundColor;
+  final VoidCallback onTap;
 
-  const LessonItem({
+  const LessonCard({
     Key? key,
-    required this.isChecked,
+    required this.imagePath,
     required this.label,
+    required this.backgroundColor,
+    required this.onTap,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Row(
-        children: [
-          Icon(
-            isChecked ? Icons.check_circle : Icons.circle,
-            color: isChecked ? Colors.green : Colors.grey,
-            size: 30,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(15),
+        child: Container(
+          decoration: BoxDecoration(
+            color: backgroundColor,
+            borderRadius: BorderRadius.circular(15),
           ),
-          const SizedBox(width: 16),
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-              decoration: BoxDecoration(
-                color: Colors.yellow.shade200,
-                borderRadius: BorderRadius.circular(30),
+          padding: const EdgeInsets.all(16),
+          child: Row(
+            children: [
+              Image.asset(
+                imagePath,
+                height: 60, // Adjust the height as needed
               ),
-              child: Text(
-                label,
-                style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
+              const SizedBox(width: 16),
+              Expanded(
+                child: Text(
+                  label,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-            ),
+            ],
           ),
-        ],
+        ),
       ),
     );
   }

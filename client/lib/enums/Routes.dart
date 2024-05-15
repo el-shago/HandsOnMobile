@@ -10,3 +10,12 @@ enum Routes {
 
   final String route;
 }
+
+enum LessonType {
+  destacados,
+  meditacionEsencial,
+  estresAnsiedad,
+  dormirDespertar,
+  crecimientoPersonal,
+  trabajoProductividad,
+}
