@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -31,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
       body: Container(
         color: Color(0xFFF5F5F5),
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(20.0),
         child: ListView(
           children: [
             TextField(
@@ -77,10 +78,12 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 20),
             MaterialButton(
               onPressed: () {
-              {
-                  print("Validar el usuario con su API");
-                  
-                }
+                // Navigate to home page and remove all previous routes
+                Navigator.pushNamedAndRemoveUntil(
+                  context,
+                  '/home_page',
+                  (Route<dynamic> route) => false,
+                );
               },
               child: Text(
                 "Iniciar Sesión",
@@ -91,6 +94,36 @@ class _LoginPageState extends State<LoginPage> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
                 side: BorderSide(color: Color(0xFFFF78B2)),
+              ),
+            ),
+            SizedBox(height: 20),
+            Center(
+              child: RichText(
+                text: TextSpan(
+                  text: '¿Aun no tienes cuenta? ',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    color: Colors.black,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'Regristrar',
+                      style: TextStyle(
+                        color: Colors.blue,
+                        decoration: TextDecoration.underline,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Navigator.pushNamedAndRemoveUntil(
+                            context,
+                            '/register_page',
+                            (Route<dynamic> route) => false,
+                          );
+                        },
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(height: 20),
