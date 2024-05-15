@@ -5,6 +5,7 @@ import 'package:hands_on_flutter/presentation/UserSettingsPage.dart';
 import 'package:hands_on_flutter/presentation/CompletedCoursePage.dart';
 import 'package:hands_on_flutter/presentation/LoginPage.dart';
 import 'package:hands_on_flutter/presentation/LeccionesPage.dart';
+import 'package:hands_on_flutter/presentation/HomeScreen.dart';
 
 void main() {
   runApp(const NavigatorPagesCetys());
@@ -28,9 +29,10 @@ class NavigatorPagesCetys extends StatelessWidget {
         Routes.completedcoursePage.route: (context) => CompletedCoursePage(),
         Routes.usersettingsPage.route: (context) => UserSettingsPage(),
         Routes.leccionesPage.route: (context) => LeccionesPage(),
+        Routes.homePage.route: (context) => HomeScreen(),
       },
 
-      initialRoute: Routes.leccionesPage.route,
+      initialRoute: Routes.homePage.route,
     );
   }
 }

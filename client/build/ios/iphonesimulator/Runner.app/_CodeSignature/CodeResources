@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		zKtEB25z+uDsR4V5cKhl7spR4+4=
+		nUjZMazen0qAgDl4SLkzrRyN0Wc=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		ldS/D+H0C2mC6y4MGNgxTuvbMoo=
+		7gecqEi9kIjrKl2Z1cHiT284OI4=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		2bDn4ahuiy83KH77XQ85ymvLFRk=
+		uRZ4rcg8rw5eGkSWmfCinC4C28Q=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		DTY9UcwQdNr4pBSp0N8TnqIwrUo=
+		0KHOBPY1N3cdaccj5oKv8uQh0tA=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		N52Yk/s+sZRKBN7bKYHsWqT8J6I=
+		ucUoVaOijiX0JKFcWUmUotrao4o=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -76,6 +76,10 @@
 		<data>
 		FqnJKdk0p5E9nlvFtT7Gpc7qWuw=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/manitas.png</key>
+		<data>
+		wabU/IZYFJ+b2vxJYhZODaBsoVU=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -86,7 +90,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		Y1OJVHmYbU+AFWjGYnjomXK8t4M=
+		fZBiSfQf1yWaLADBbKHblloP7Sk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -224,7 +228,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MDPfo9ISKUChOc2IRM+MtPUg5ekO3vJD3QU2/e4AQV0=
+			8sVTeuD8H/8b/wCHL/7BYuWdJPyT2Ps7gQX/oBLG+Eg=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -273,7 +277,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			F6bQV+uOwogfEq7qWlzBWUibIKaNeH+2XFCwq80YD+I=
+			BqQZ+32I2U1BInfeGzg/tf8ebvnLlN5lPgkG7d2xZh0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -287,21 +291,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vmoHsaf/27TfkpMYsOKgG45BEHnQ3E6frOrvVTZ5Qy4=
+			VPT3F9yPOoYl4k+IfeM4xDWNSWbpsWPFvIrvxAmzL3Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ru1yNzbclzHhesyBIZQn46ufdLGfTr5aWCUs78IR+BM=
+			09RAqy7IC0jRofRUVxAp4Mi0a26p4OAz2BEDmoJ0h5A=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YgKdc2RBIwHgLkMxxNMXo1cMj9Nwwa0+89RANVhmunA=
+			GNnbRk/es3wI44CEfLvNb4lfbpvwMc90jjCBWo9Q0cA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -325,6 +329,13 @@
 			dSuiIPuZkKkvb3vfsVn7jsjbifoRLiaKzC0c6G/diFM=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/images/manitas.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LQ/BOrpHWWWiNrDB9ZYk1pRHx9F57MibOFazi2823FE=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -343,7 +354,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z1+TT4AOiQ9oExRiIOSdZnEdh2Oo9klmC7WytDZnAX8=
+			HcRfOWX8+AR1vbs5opU96J3gvwgeP6tZ5Ps88+HdU4k=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
