@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'exercise_model.dart';
+import 'ExerciseScreen.dart'; // Import the ExerciseScreen widget
 
 class LeccionesPage extends StatelessWidget {
   const LeccionesPage({Key? key}) : super(key: key);
@@ -47,18 +49,96 @@ class LeccionesPage extends StatelessWidget {
             Expanded(
               child: ListView(
                 children: [
-                  // Each LessonCard without navigation action
                   LessonCard(
-                    imagePath: 'assets/images/manitas.png',
+                    imagePath: 'assets/images/sign_b.png',
                     label: 'Alfabeto',
-                    backgroundColor: Colors.amber,
-                    onTap: () {},
+                    backgroundColor: Colors.red,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ExerciseScreen(
+                            exercises: [
+                              Exercise(
+                                signs: [
+                                  'assets/images/signlanguage.png',
+                                ],
+                                question:
+                                    '¿Que estamos aprendiendo en esta leccion?',
+                                choices: [
+                                  'Lengua de señas mexicana',
+                                  'Lengua de señas americna',
+                                  'Lengua de señas francesa'
+                                ],
+                                correctAnswer: 'Lengua de señas mexicana',
+                              ),
+                              Exercise(
+                                signs: [
+                                  'assets/images/sign_a.png',
+                                  'assets/images/sign_b.png',
+                                  'assets/images/sign_c.png'
+                                ],
+                                question:
+                                    '¿Cuáles letras representan las siguientes señas?',
+                                choices: ['DEF', 'ABC', 'GHI'],
+                                correctAnswer: 'ABC',
+                              ),
+                              Exercise(
+                                signs: [
+                                  'assets/images/sign_a.png',
+                                  'assets/images/sign_b.png',
+                                  'assets/images/sign_c.png'
+                                ],
+                                question:
+                                    '¿Cuáles letras representan las siguientes señas?',
+                                choices: ['ABC', 'DEF', 'GHI'],
+                                correctAnswer: 'ABC',
+                              ),
+                              Exercise(
+                                signs: [
+                                  'assets/images/sign_a.png',
+                                  'assets/images/sign_b.png',
+                                  'assets/images/sign_c.png'
+                                ],
+                                question:
+                                    '¿Cuáles letras representan las siguientes señas?',
+                                choices: ['ABC', 'DEF', 'GHI'],
+                                correctAnswer: 'ABC',
+                              ),
+                              Exercise(
+                                signs: [
+                                  'assets/images/sign_a.png',
+                                  'assets/images/sign_b.png',
+                                  'assets/images/sign_c.png'
+                                ],
+                                question:
+                                    '¿Cuáles letras representan las siguientes señas?',
+                                choices: ['ABC', 'DEF', 'GHI'],
+                                correctAnswer: 'ABC',
+                              ),
+                              // Add more exercises here
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
                   LessonCard(
                     imagePath: 'assets/images/manitas.png',
                     label: 'Números',
                     backgroundColor: Colors.orange,
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ExerciseScreen(
+                            exercises: [
+                              // Add number exercises here
+                            ],
+                          ),
+                        ),
+                      );
+                    },
                   ),
                   LessonCard(
                     imagePath: 'assets/images/manitas.png',
@@ -76,12 +156,6 @@ class LeccionesPage extends StatelessWidget {
                     imagePath: 'assets/images/manitas.png',
                     label: 'Objetos',
                     backgroundColor: Colors.purple,
-                    onTap: () {},
-                  ),
-                  LessonCard(
-                    imagePath: 'assets/images/manitas.png',
-                    label: 'Alfabeto',
-                    backgroundColor: Colors.green,
                     onTap: () {},
                   ),
                 ],
