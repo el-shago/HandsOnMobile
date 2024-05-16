@@ -80,41 +80,41 @@ class LeccionesPage extends StatelessWidget {
                                 ],
                                 question:
                                     '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['DEF', 'ABC', 'GHI'],
+                                choices: ['DEF', 'ABC', 'JKL'],
                                 correctAnswer: 'ABC',
                               ),
                               Exercise(
                                 signs: [
-                                  'assets/images/sign_a.png',
-                                  'assets/images/sign_b.png',
-                                  'assets/images/sign_c.png'
+                                  'assets/images/sign_d.png',
+                                  'assets/images/sign_e.png',
+                                  'assets/images/sign_f.png'
                                 ],
                                 question:
                                     '¿Cuáles letras representan las siguientes señas?',
                                 choices: ['ABC', 'DEF', 'GHI'],
-                                correctAnswer: 'ABC',
+                                correctAnswer: 'DEF',
                               ),
                               Exercise(
                                 signs: [
-                                  'assets/images/sign_a.png',
-                                  'assets/images/sign_b.png',
-                                  'assets/images/sign_c.png'
+                                  'assets/images/sign_g.png',
+                                  'assets/images/sign_h.png',
+                                  'assets/images/sign_i.png'
                                 ],
                                 question:
                                     '¿Cuáles letras representan las siguientes señas?',
                                 choices: ['ABC', 'DEF', 'GHI'],
-                                correctAnswer: 'ABC',
+                                correctAnswer: 'GHI',
                               ),
                               Exercise(
                                 signs: [
-                                  'assets/images/sign_a.png',
-                                  'assets/images/sign_b.png',
-                                  'assets/images/sign_c.png'
+                                  'assets/images/sign_x.png',
+                                  'assets/images/sign_y.png',
+                                  'assets/images/sign_z.png'
                                 ],
                                 question:
                                     '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['ABC', 'DEF', 'GHI'],
-                                correctAnswer: 'ABC',
+                                choices: ['ABC', 'XYZ', 'GHI'],
+                                correctAnswer: 'XYZ',
                               ),
                               // Add more exercises here
                             ],
