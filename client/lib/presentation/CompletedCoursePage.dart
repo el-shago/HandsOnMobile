@@ -5,6 +5,11 @@ class CompletedCoursePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Navigate back to the LeccionesPage after a 3-second delay
+    Future.delayed(const Duration(seconds: 1), () {
+      Navigator.popUntil(context, (route) => route.isFirst);
+    });
+
     return Scaffold(
       backgroundColor: const Color.fromRGBO(148, 236, 137, 1.0),
       body: Center(

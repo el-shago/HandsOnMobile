@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'exercise_model.dart'; // Import the Exercise model
+import 'CompletedCoursePage.dart'; // Import the CompletedCoursePage widget
 
 class ExerciseScreen extends StatefulWidget {
   final List<Exercise> exercises;
@@ -108,7 +109,12 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                             selectedAnswer = null;
                           });
                         } else {
-                          Navigator.pop(context); // Go back to previous page
+                          Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CompletedCoursePage(),
+                            ),
+                          );
                         }
                       });
                     }

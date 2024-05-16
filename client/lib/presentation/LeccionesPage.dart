@@ -171,7 +171,7 @@ class LeccionesPage extends StatelessWidget {
                     },
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/manitas.png',
+                    imagePath: 'assets/images/sign_z.png',
                     label: 'Números',
                     backgroundColor: Colors.orange,
                     onTap: () {
@@ -188,19 +188,19 @@ class LeccionesPage extends StatelessWidget {
                     },
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/manitas.png',
+                    imagePath: 'assets/images/sign_y.png',
                     label: 'Saludos',
                     backgroundColor: Colors.blue,
                     onTap: () {},
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/manitas.png',
+                    imagePath: 'assets/images/family.png',
                     label: 'Familia',
                     backgroundColor: Colors.indigo,
                     onTap: () {},
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/manitas.png',
+                    imagePath: 'assets/images/ball.png',
                     label: 'Objetos',
                     backgroundColor: Colors.purple,
                     onTap: () {},
