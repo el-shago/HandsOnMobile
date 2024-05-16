@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'exercise_model.dart';
+
 import 'ExerciseScreen.dart'; // Import the ExerciseScreen widget
+import 'ReadingScreen.dart'; // Import the ReadingScreen widget
 
 class LeccionesPage extends StatelessWidget {
   const LeccionesPage({Key? key}) : super(key: key);
@@ -57,66 +58,112 @@ class LeccionesPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ExerciseScreen(
-                            exercises: [
-                              Exercise(
-                                signs: [
-                                  'assets/images/signlanguage.png',
-                                ],
-                                question:
-                                    '¿Que estamos aprendiendo en esta leccion?',
-                                choices: [
-                                  'Lengua de señas mexicana',
-                                  'Lengua de señas americna',
-                                  'Lengua de señas francesa'
-                                ],
-                                correctAnswer: 'Lengua de señas mexicana',
-                              ),
-                              Exercise(
-                                signs: [
-                                  'assets/images/sign_a.png',
-                                  'assets/images/sign_b.png',
-                                  'assets/images/sign_c.png'
-                                ],
-                                question:
-                                    '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['DEF', 'ABC', 'JKL'],
-                                correctAnswer: 'ABC',
-                              ),
-                              Exercise(
-                                signs: [
-                                  'assets/images/sign_d.png',
-                                  'assets/images/sign_e.png',
-                                  'assets/images/sign_f.png'
-                                ],
-                                question:
-                                    '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['ABC', 'DEF', 'GHI'],
-                                correctAnswer: 'DEF',
-                              ),
-                              Exercise(
-                                signs: [
-                                  'assets/images/sign_g.png',
-                                  'assets/images/sign_h.png',
-                                  'assets/images/sign_i.png'
-                                ],
-                                question:
-                                    '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['ABC', 'DEF', 'GHI'],
-                                correctAnswer: 'GHI',
-                              ),
-                              Exercise(
-                                signs: [
-                                  'assets/images/sign_x.png',
-                                  'assets/images/sign_y.png',
-                                  'assets/images/sign_z.png'
-                                ],
-                                question:
-                                    '¿Cuáles letras representan las siguientes señas?',
-                                choices: ['ABC', 'XYZ', 'GHI'],
-                                correctAnswer: 'XYZ',
-                              ),
-                              // Add more exercises here
+                          builder: (context) => ReadingScreen(
+                            signs: [
+                              {
+                                'letter': 'A',
+                                'imagePath': 'assets/images/sign_a.png'
+                              },
+                              {
+                                'letter': 'B',
+                                'imagePath': 'assets/images/sign_b.png'
+                              },
+                              {
+                                'letter': 'C',
+                                'imagePath': 'assets/images/sign_c.png'
+                              },
+                              {
+                                'letter': 'D',
+                                'imagePath': 'assets/images/sign_d.png'
+                              },
+                              {
+                                'letter': 'E',
+                                'imagePath': 'assets/images/sign_e.png'
+                              },
+                              {
+                                'letter': 'F',
+                                'imagePath': 'assets/images/sign_f.png'
+                              },
+                              {
+                                'letter': 'G',
+                                'imagePath': 'assets/images/sign_g.png'
+                              },
+                              {
+                                'letter': 'H',
+                                'imagePath': 'assets/images/sign_h.png'
+                              },
+                              {
+                                'letter': 'I',
+                                'imagePath': 'assets/images/sign_i.png'
+                              },
+                              {
+                                'letter': 'J',
+                                'imagePath': 'assets/images/sign_j.png'
+                              },
+                              {
+                                'letter': 'C',
+                                'imagePath': 'assets/images/sign_k.png'
+                              },
+                              {
+                                'letter': 'C',
+                                'imagePath': 'assets/images/sign_l.png'
+                              },
+                              {
+                                'letter': 'C',
+                                'imagePath': 'assets/images/sign_m.png'
+                              },
+                              {
+                                'letter': 'N',
+                                'imagePath': 'assets/images/sign_n.png'
+                              },
+                              {
+                                'letter': 'O',
+                                'imagePath': 'assets/images/sign_o.png'
+                              },
+                              {
+                                'letter': 'P',
+                                'imagePath': 'assets/images/sign_p.png'
+                              },
+                              {
+                                'letter': 'Q',
+                                'imagePath': 'assets/images/sign_q.png'
+                              },
+                              {
+                                'letter': 'R',
+                                'imagePath': 'assets/images/sign_r.png'
+                              },
+                              {
+                                'letter': 'S',
+                                'imagePath': 'assets/images/sign_s.png'
+                              },
+                              {
+                                'letter': 'T',
+                                'imagePath': 'assets/images/sign_t.png'
+                              },
+                              {
+                                'letter': 'U',
+                                'imagePath': 'assets/images/sign_u.png'
+                              },
+                              {
+                                'letter': 'V',
+                                'imagePath': 'assets/images/sign_v.png'
+                              },
+                              {
+                                'letter': 'W',
+                                'imagePath': 'assets/images/sign_w.png'
+                              },
+                              {
+                                'letter': 'X',
+                                'imagePath': 'assets/images/sign_x.png'
+                              },
+                              {
+                                'letter': 'Y',
+                                'imagePath': 'assets/images/sign_y.png'
+                              },
+                              {
+                                'letter': 'Z',
+                                'imagePath': 'assets/images/sign_z.png'
+                              },
                             ],
                           ),
                         ),

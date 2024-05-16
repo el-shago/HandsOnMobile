@@ -33,14 +33,7 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Ejercicio ${exerciseIndex + 1}',
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        title: Text('Ejercicio ${exerciseIndex + 1}'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -68,7 +61,7 @@ class _ExerciseScreenState extends State<ExerciseScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Image.asset(
                     sign,
-                    height: 150, // Adjust the size as needed
+                    height: 80, // Adjust the size as needed
                   ),
                 );
               }).toList(),
