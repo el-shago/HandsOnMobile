@@ -98,7 +98,7 @@ class ReadingScreen extends StatelessWidget {
                           ],
                           question:
                               '¿Cuáles letras representan las siguientes señas?',
-                          choices: ['DEF', 'ABC', 'GHI'],
+                          choices: ['HIJ', 'ABC', 'DEF'],
                           correctAnswer: 'DEF',
                         ),
                         Exercise(
@@ -109,7 +109,7 @@ class ReadingScreen extends StatelessWidget {
                           ],
                           question:
                               '¿Cuáles letras representan las siguientes señas?',
-                          choices: ['HIJ', 'KLM', 'XYZ'],
+                          choices: ['KLM', 'HIJ', 'XYZ'],
                           correctAnswer: 'HIJ',
                         ),
                         Exercise(
@@ -131,7 +131,7 @@ class ReadingScreen extends StatelessWidget {
                           ],
                           question:
                               '¿Cuáles letras representan las siguientes señas?',
-                          choices: ['UVW', 'ABC', 'GHI'],
+                          choices: ['DEF', 'ABC', 'UVW'],
                           correctAnswer: 'UVW',
                         ),
                         // Add more exercises here
@@ -144,7 +144,6 @@ class ReadingScreen extends StatelessWidget {
                 'Continuar',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
-              
             ),
           ],
         ),
