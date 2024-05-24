@@ -124,10 +124,11 @@ class _RegisterPageState extends State<RegisterPage> {
           SizedBox(height: 20),
           MaterialButton(
             onPressed: () {
-              if (keyFormLogin.currentState!.validate()) {
-                print("Validar el usuario con su API");
-                login();
-              }
+              Navigator.pushNamedAndRemoveUntil(
+                context,
+                '/login_page',
+                (Route<dynamic> route) => false,
+              );
             },
             child: Text(
               "Registrar",

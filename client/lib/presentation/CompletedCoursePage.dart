@@ -5,8 +5,7 @@ class CompletedCoursePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Navigate back to the LeccionesPage after a 3-second delay
-    Future.delayed(const Duration(seconds: 1), () {
+    Future.delayed(const Duration(seconds: 2), () {
       Navigator.popUntil(context, (route) => route.isFirst);
     });
 

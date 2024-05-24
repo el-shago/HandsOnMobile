@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hands_on_flutter/presentation/UserSettingsPage.dart';
 import 'package:hands_on_flutter/presentation/LeccionesPage.dart';
-import 'package:hands_on_flutter/presentation/AjustesPage.dart';
+import 'package:hands_on_flutter/presentation/SettingsPage.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,10 +11,11 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 1;
 
-  static const List<Widget> _widgetOptions = <Widget>[
+  // Remove the `const` keyword
+  static final List<Widget> _widgetOptions = <Widget>[
     UserSettingsPage(),
     LeccionesPage(),
-    AjustesPage(),
+    SettingsPage(),
   ];
 
   void _onItemTapped(int index) {

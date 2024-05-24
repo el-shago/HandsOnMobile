@@ -10,7 +10,7 @@ class LeccionesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFFF5F5F5),
+        backgroundColor: Colors.white,
         title: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -33,7 +33,7 @@ class LeccionesPage extends StatelessWidget {
         elevation: 0,
       ),
       body: Container(
-        color: const Color(0xFFF5F5F5),
+        color: Colors.white,
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
@@ -53,7 +53,7 @@ class LeccionesPage extends StatelessWidget {
                   LessonCard(
                     imagePath: 'assets/images/sign_b.png',
                     label: 'Alfabeto',
-                    backgroundColor: Colors.red,
+                    backgroundColor: Color.fromRGBO(50, 189, 7, 1),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -101,15 +101,15 @@ class LeccionesPage extends StatelessWidget {
                                 'imagePath': 'assets/images/sign_j.png'
                               },
                               {
-                                'letter': 'C',
+                                'letter': 'K',
                                 'imagePath': 'assets/images/sign_k.png'
                               },
                               {
-                                'letter': 'C',
+                                'letter': 'L',
                                 'imagePath': 'assets/images/sign_l.png'
                               },
                               {
-                                'letter': 'C',
+                                'letter': 'M',
                                 'imagePath': 'assets/images/sign_m.png'
                               },
                               {
@@ -173,36 +173,25 @@ class LeccionesPage extends StatelessWidget {
                   LessonCard(
                     imagePath: 'assets/images/sign_z.png',
                     label: 'Números',
-                    backgroundColor: Colors.orange,
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => ExerciseScreen(
-                            exercises: [
-                              // Add number exercises here
-                            ],
-                          ),
-                        ),
-                      );
-                    },
+                    backgroundColor: Color.fromRGBO(199, 193, 54, 1),
+                    onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/sign_y.png',
                     label: 'Saludos',
-                    backgroundColor: Colors.blue,
+                    backgroundColor: Color.fromRGBO(210, 40, 40, 1),
                     onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/family.png',
                     label: 'Familia',
-                    backgroundColor: Colors.indigo,
+                    backgroundColor: Color.fromRGBO(154, 90, 98, 1),
                     onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/ball.png',
                     label: 'Objetos',
-                    backgroundColor: Colors.purple,
+                    backgroundColor: Color.fromRGBO(30, 187, 234, 1),
                     onTap: () {},
                   ),
                 ],

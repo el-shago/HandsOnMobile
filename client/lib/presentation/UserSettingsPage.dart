@@ -8,9 +8,13 @@ class UserSettingsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-            style: TextStyle(
-                color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold),
-            'Perfil'),
+          'Perfil',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -24,12 +28,9 @@ class UserSettingsPage extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: Colors.grey.shade300,
-                ),
-                child: Center(
-                  child: Icon(
-                    Icons.person,
-                    size: 60.0,
-                    color: Colors.grey.shade500,
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/iso.jpeg'),
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
