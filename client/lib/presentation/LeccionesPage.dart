@@ -171,13 +171,13 @@ class LeccionesPage extends StatelessWidget {
                     },
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/sign_z.png',
+                    imagePath: 'assets/images/numbers.png',
                     label: 'Números',
                     backgroundColor: Color.fromRGBO(254, 108, 171, 1),
                     onTap: () {},
                   ),
                   LessonCard(
-                    imagePath: 'assets/images/sign_y.png',
+                    imagePath: 'assets/images/greetings.png',
                     label: 'Saludos',
                     backgroundColor: Color.fromRGBO(45, 212, 73, 1),
                     onTap: () {},
