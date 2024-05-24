@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'ExerciseScreen.dart'; // Import the ExerciseScreen widget
-import 'ReadingScreen.dart'; // Import the ReadingScreen widget
+import 'ExerciseScreen.dart';
+import 'ReadingScreen.dart';
 
 class LeccionesPage extends StatelessWidget {
   const LeccionesPage({Key? key}) : super(key: key);
@@ -53,7 +53,7 @@ class LeccionesPage extends StatelessWidget {
                   LessonCard(
                     imagePath: 'assets/images/sign_b.png',
                     label: 'Alfabeto',
-                    backgroundColor: Color.fromRGBO(50, 189, 7, 1),
+                    backgroundColor: Color.fromRGBO(162, 118, 255, 1),
                     onTap: () {
                       Navigator.push(
                         context,
@@ -173,25 +173,25 @@ class LeccionesPage extends StatelessWidget {
                   LessonCard(
                     imagePath: 'assets/images/sign_z.png',
                     label: 'Números',
-                    backgroundColor: Color.fromRGBO(199, 193, 54, 1),
+                    backgroundColor: Color.fromRGBO(254, 108, 171, 1),
                     onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/sign_y.png',
                     label: 'Saludos',
-                    backgroundColor: Color.fromRGBO(210, 40, 40, 1),
+                    backgroundColor: Color.fromRGBO(45, 212, 73, 1),
                     onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/family.png',
                     label: 'Familia',
-                    backgroundColor: Color.fromRGBO(154, 90, 98, 1),
+                    backgroundColor: Color.fromRGBO(239, 232, 50, 1),
                     onTap: () {},
                   ),
                   LessonCard(
                     imagePath: 'assets/images/ball.png',
                     label: 'Objetos',
-                    backgroundColor: Color.fromRGBO(30, 187, 234, 1),
+                    backgroundColor: Color.fromRGBO(108, 228, 254, 1),
                     onTap: () {},
                   ),
                 ],

@@ -36,14 +36,6 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.language),
-            title: Text('Idioma'),
-            subtitle: Text('Español'),
-            onTap: () {
-              // Handle language change
-            },
-          ),
-          ListTile(
             leading: Icon(Icons.palette),
             title: Text('Tema'),
             onTap: () {
